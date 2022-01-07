@@ -1,0 +1,89 @@
+/* selector {
+    propiedad: valor;
+} esta es la estructura base de todo css, se usa de esta forma para que el navegador lo pueda leer como css */
+* /*este es el selector universal, es decir selecciona y modifica las propiedades visuales de todo lo existente en la pagina*/ {
+    color /*como dice el nombre es la propiedad de color, pero se dirige directamente al contenido, no toca las cajas*/: #f00000 /*se pone el codigo de identidad del valor, en este caso el color*/;
+}
+h1 /*este es un selector de tipo, por ende se seleccionaran y modificaran el contenido de todas las etiquetas del selector, ya sea span, p, body, button,input, etc*/ {
+    color: #c000fa;
+}
+.segundoparrafo /*este es un selector de tipo clases, se edita en la etiqueta una clase que sera llamada en el css mediante un punto seguido por el nombre de la clase*/ {
+    color: #73ff00;
+}
+#tercero /*es un selector por id, las id son una forma de identificar algo, funciona similar al selector por clases, pero, el id solo se puede poner a un unico objetivo*/ {
+    color: #c0055c;
+}
+[atributo="cuarto"] /*selector por atributos, este tipo de selector "crea" un nuvo atributo en la etiqueta, es como poner el class solo que se hace con el nombre que quieras, tambien es innecesario la especificacion (="cuarto") se puede poner solo un nombre como forma de atributo y el codigo sera identificado y modificado*/ {
+    color: blue;
+}
+.h1 b/*hay un metodo de seleccion llamado desendiente, se pueden usar los modos anteriores para ello, ya sea con clases, id,etc. la forma de uso es delmas grande al mas pequeño.*/ {
+    color: aquamarine;
+}
+h1:hover /*esta es una seudoclase, solo se activa este codigo si se cumple una condicion, se pueden usar cualquiera de los metodos anteriores solo se le debe agregar al selector la accion o condicion luego de dos puntos (selector: condicion)*/{
+    color: black;
+}
+li {
+    display: table-caption;
+}
+[negro] {
+    background-color: black !important;
+}
+[rojo] {
+    background-color: red !important;
+}
+[rojoclaro] {
+    background-color: rgb(206, 57, 57) !important;
+}
+[piel] {
+    background-color: salmon !important;
+}
+[blanco] {
+    background-color:seashell !important;
+}
+[blanco1] {
+    color:seashell !important;
+}
+[negro2] {
+    color: black !important;
+}
+.pruv_1 {
+    font-size: 50px; /*medidas directas son px, mm, cm, etc*/
+}
+.pruv_2 {
+    font-size: 4em; /*medida relativa, donde em es la medida heredada de un nivel superior*/
+}
+.pruv_3 {
+    font-family: 'Courier New', Courier, monospace; /*tipografia de la letra*/
+}
+.pruv_4 {
+    line-height: 2; /*es la medida de la linea donde height es la letra en si, esto da una medida a base del heightn por ende si se pone 2, el contenido tendra un tamaño de 2 veces la letra*/
+}
+.pruv_5 {
+    font-weight: 800;/*el grosor de la letra*/
+}
+.prub_1 {
+    background-color: brown; /*color de fonde de la caja*/
+    /*display: inline-block; display modifica la caja*/
+}
+.prub_2 {
+    display: inline-block;
+    background-color: blue;
+    padding: 30px 10px 0px 50px; /*padding es una medicion entre el texto y el borde, se puede simplificar con solo esta palabra clave (padding) y poner los parametros correspondientes, padding recibe 3 formas de parametro, la general que se basta de poner una sola medida y esa se imploementara en todas las direcciones, esta la cuasi general, donde pones solo dos medidas siendo la primera arriba y abajo, y la segunda derecha e izquierda, y por utimo la especifica que recibe 4 parametros en el siguiente orden, arriba, derecha, abajo y izquierda*/
+}
+.prub_3 {
+    background-color: crimson;
+    display: inline-block;
+    margin: 100px; /*es igual al padding solo que es entre las cajas*/
+}
+.prub_4 {
+    background-color: cyan;
+    border-radius: 10%; /*le da un radio al borde de la caja*/
+    border: 10px solid blue; /*border es el borde de la caja, el primer parametro da el grosor del borde, el segundo da la forma y el ultimo el color*/
+    box-shadow: 10px 10px 10px 10px black;/*le da sombra a la caja, resive parametros de ubicacion y color*/
+    text-shadow: 2px 2px 7px black; /*lo mismo que el boxshadow, solo que es en el texto y no tiene parametro de grosor*/
+    transform: rotate(-22deg); /*rota el texto*/
+}
+/*
+position: da una forma en que se ubican las cajas
+overflow
+*/
